@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Stack PDF",
+    "slug": "stack-pdf-179185",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "stackpdf",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png",
+      "bundler": "metro",
+      "output": "single",
+      "config": {
+        "maxWorkers": 2
+      },
+      "meta": {
+        "description": "Convert up to 200 photos into margin-free PDFs with vertically stacked images. Free, fast, and no registration required.",
+        "keywords": ["PDF", "photo converter", "image to PDF", "document creator", "free PDF tool"],
+        "author": "Stack PDF",
+        "og:title": "Stack PDF - Convert Photos to PDF",
+        "og:description": "Free online tool to convert multiple photos into professional PDFs without margins",
+        "og:type": "website",
+        "og:image": "./assets/images/icon.png"
+      }
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "life.magically.stackpdf",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSPhotoLibraryUsageDescription": "Stack PDF needs access to your photos",
+        "NSPhotoLibraryAddUsageDescription": "Stack PDF needs permission to save photos",
+        "NSCameraUsageDescription": "Stack PDF uses the camera to take photos"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "life.magically.stackpdf"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

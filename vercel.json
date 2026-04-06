@@ -1,0 +1,13 @@
+{
+  "buildCommand": "bun run build:web",
+  "outputDirectory": "dist",
+  "installCommand": "bun install",
+  "framework": null,
+  "functions": {},
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

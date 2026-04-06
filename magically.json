@@ -1,0 +1,312 @@
+{
+  "version": "1.0.0",
+  "projectId": "f48659a9-b1dc-45c0-93fd-59480e48e3cc",
+  "projectName": "Stack PDF",
+  "fileManifest": [
+    {
+      "path": "App.tsx",
+      "language": "typescript",
+      "hash": "a2900726732a947f16237cfbf5e01234938a6a841f5ba05f7d60e0fdeb511b71"
+    },
+    {
+      "path": "components/ThemeSwitcher.tsx",
+      "language": "typescript",
+      "hash": "d8ad830af738f474778ff1072700ee1694f9d77b68368740102639a7e434148e"
+    },
+    {
+      "path": "components/feedback/CategoryFilter.tsx",
+      "language": "typescript",
+      "hash": "ad2084e49257db1ba14aa7dbd91f95123243b8a40cec049b33ab039099316fa9"
+    },
+    {
+      "path": "components/feedback/CreateFeedbackModal.tsx",
+      "language": "typescript",
+      "hash": "b4367f64ae8415aa357d4a0be9926cf897816474496c6694864cb74d7e42f415"
+    },
+    {
+      "path": "components/feedback/FeedbackDetailModal.tsx",
+      "language": "typescript",
+      "hash": "d9b1da93094316ed7b27a37676826a8e432b54218cbe5fb66905fdc39f10e7e8"
+    },
+    {
+      "path": "components/feedback/FeedbackItem.tsx",
+      "language": "typescript",
+      "hash": "884c576eeff9fd24180997afcf49bc623ad819b9b111838ed6826babfa33923e"
+    },
+    {
+      "path": "components/feedback/index.ts",
+      "language": "typescript",
+      "hash": "9ad0f3201a49ecdf308c849ff262d7e57804de76912e469338a5f9be789e45c6"
+    },
+    {
+      "path": "components/ui/AnimatedSpinner.tsx",
+      "language": "typescript",
+      "hash": "7522df240bea7e60e4f651a483e5628479cfed98194b0c9af1a50fa15300b958"
+    },
+    {
+      "path": "components/ui/BlurCard.tsx",
+      "language": "typescript",
+      "hash": "69eb8bbeeefc830c6583d3c38b6383837c351d0ad008a90778b0556d56f5c41c"
+    },
+    {
+      "path": "components/ui/Button.tsx",
+      "language": "typescript",
+      "hash": "567cafa41d37f25197a58c3b2948c5e92cd6599d3eec1c947bc80b3c2845ad11"
+    },
+    {
+      "path": "components/ui/DatePicker.tsx",
+      "language": "typescript",
+      "hash": "9a91a9447eebf633fb40896cda17f21df662b5bbce144a61228e7544f57e19d3"
+    },
+    {
+      "path": "components/ui/Header.tsx",
+      "language": "typescript",
+      "hash": "66e3dc335756b847e3718fe93a5040a90ebff1d17f437acf03405a466296a43c"
+    },
+    {
+      "path": "components/ui/Logo.tsx",
+      "language": "typescript",
+      "hash": "4749bcf3a29151ccfb65bdece9d5b262a3f83cafe3dcddf01c1de4169b4ecda4"
+    },
+    {
+      "path": "components/ui/MagicallyAlert.tsx",
+      "language": "typescript",
+      "hash": "d630f6fdcb316bceeddcb7c1c16d71f9f9a1298d0070c056e0a876a5c4de9c84"
+    },
+    {
+      "path": "components/ui/ModalWrapper.tsx",
+      "language": "typescript",
+      "hash": "5724ebe5980e597df7bb15edb315f884f37b5011b0d8ec9a0805f441b5cfcd6d"
+    },
+    {
+      "path": "components/ui/Skeleton.tsx",
+      "language": "typescript",
+      "hash": "0fbb4ed4b935ea21146fc8ba7e362cad134223b95f9e293ec4ee6c460ece34d7"
+    },
+    {
+      "path": "components/ui/index.tsx",
+      "language": "typescript",
+      "hash": "1909f2d910a55791b3ccaf23ff366be8cf322c17aafb1f645c30876876775436"
+    },
+    {
+      "path": "constants/theme.ts",
+      "language": "typescript",
+      "hash": "c25daddaca2a161d6379811967f5c25b9b1c924b1db6e84199310fe490d2c279"
+    },
+    {
+      "path": "contexts/ThemeContext.tsx",
+      "language": "typescript",
+      "hash": "1ff882e576b227d18c48869d6afe43a7a80f8e6f5eb4d4810eb5b2ff161d6ca1"
+    },
+    {
+      "path": "magically/config.ts",
+      "language": "typescript",
+      "hash": "6c256a3da7aab688770afb7ad894e99512a4d888312138126e0d6a5f12ff6f60"
+    },
+    {
+      "path": "magically/entities/Feedback.ts",
+      "language": "typescript",
+      "hash": "6068e6407987c8c9c8613ac140c301ccad24ce182869766cdf642f927fa397c0"
+    },
+    {
+      "path": "magically/functions/cron-job/index.ts",
+      "language": "typescript",
+      "hash": "a6dfb2550598285cc08cd1532f1def0f5a652aebd9bbc150dbc3937ca24adf88"
+    },
+    {
+      "path": "magically/functions/cron-job/wrangler.toml",
+      "language": "text",
+      "hash": "0ff94053d12c07bdd88b4653992cab942c202b1e87da3ee2532eb64e264a5493"
+    },
+    {
+      "path": "magically/functions/health-check/index.ts",
+      "language": "typescript",
+      "hash": "46a3f33106f46ff8b36e32ca4a530f85344ce82d2a8b0e7b55988f942c684636"
+    },
+    {
+      "path": "magically/functions/health-check/wrangler.toml",
+      "language": "text",
+      "hash": "0c5de4e9911386a1fb77340dd761f7a018ac3d5730065e01d4b5bc5cb2611a88"
+    },
+    {
+      "path": "magically/functions/stripe-payment/index.ts",
+      "language": "typescript",
+      "hash": "7e86bcc254479e4fcd376c35fa84c68d3a04aabca75e3c0f862fdb4159ca6834"
+    },
+    {
+      "path": "magically/functions/stripe-payment/wrangler.toml",
+      "language": "text",
+      "hash": "0530460464c69b3dc519caafffe8b55c5ec57f9f34b74d4b312a96d5b79e7e3c"
+    },
+    {
+      "path": "magically/functions/stripe-webhook/index.ts",
+      "language": "typescript",
+      "hash": "b79db96880231a07080e04684395e6111e40368e76e8c6bc6fedd5dcf3fea2a4"
+    },
+    {
+      "path": "magically/functions/stripe-webhook/wrangler.toml",
+      "language": "text",
+      "hash": "3dc7fa155143fe15199922afcf12089f39a4f592eefce55aa923ef844b183be6"
+    },
+    {
+      "path": "magically/init.ts",
+      "language": "typescript",
+      "hash": "662dc8a14714144d2962ba316c832250a883064dd54a0cbac029dfb48e1d03f8"
+    },
+    {
+      "path": "magically/schemas/Feedback.json",
+      "language": "json",
+      "hash": "799e0b1c9960783eae03fc45bdd7ab27f50933670fd80f7045cd18fc4b7828d7"
+    },
+    {
+      "path": "magically/utils/NavigationLogger.ts",
+      "language": "typescript",
+      "hash": "11717b3be6a297a776ff89f0aec1d16ade9fc662a01329908aa398e7a47ccb95"
+    },
+    {
+      "path": "navigation/MainTabNavigator.tsx",
+      "language": "typescript",
+      "hash": "f85732e1876d88b36ec56628bbfd706796eeb5b8303f1efd0ba1f1d3e94ee00b"
+    },
+    {
+      "path": "navigation/RootNavigator.tsx",
+      "language": "typescript",
+      "hash": "a4f98aad7f495c03485875e158840788c179417befd92e22da12e79b6c9e8559"
+    },
+    {
+      "path": "screens/FeedbackScreen.tsx",
+      "language": "typescript",
+      "hash": "c2091c3f16b0c7b7a911c780d1630edbc2ce7108d78d628b30865865f9321cd0"
+    },
+    {
+      "path": "screens/ProfileScreen.tsx",
+      "language": "typescript",
+      "hash": "ebcf15144018da9dd3ff636ef2fef2698ebc2d07430e142cb2d1e3a0039dcefa"
+    },
+    {
+      "path": "services/BaseDownloadService.ts",
+      "language": "typescript",
+      "hash": "ecd0b40988ef5573022b36c7a0f50681d2e5a46ef2f87642bedccb08cc662095"
+    },
+    {
+      "path": "services/DownloadManager.ts",
+      "language": "typescript",
+      "hash": "fa5ed6712861cf28b1de159d07b3c6807849b9a32b63ca62c509cde73871c88d"
+    },
+    {
+      "path": "services/DownloadValidatorService.ts",
+      "language": "typescript",
+      "hash": "6a97ec64063568059db7b3dd4fe2fa9814e949e26958631d545b792991183b4a"
+    },
+    {
+      "path": "services/FileManagerService.ts",
+      "language": "typescript",
+      "hash": "9a1f0b187343577adb646bd7a5ab87c9375b936cbb9bfa630472a88690b2a1ad"
+    },
+    {
+      "path": "services/ProgressTrackingService.ts",
+      "language": "typescript",
+      "hash": "9e85766d29243dd047fd383341154b9930ecc143fec9b2450ca0d7a2c0e96e71"
+    },
+    {
+      "path": "services/accountService.ts",
+      "language": "typescript",
+      "hash": "e764a536411c5f67c664164df78a778e30acc70a2b0c3130838c61e3d55d6aa3"
+    },
+    {
+      "path": "stores/appStateStore.ts",
+      "language": "typescript",
+      "hash": "f834a612a78dcce37bec08e94fa57f4eb9363dee41df605199997c1bcf4fca5a"
+    },
+    {
+      "path": "types/downloadTypes.ts",
+      "language": "typescript",
+      "hash": "443fe196e5c1a2e368a9011b93e88e321431dc711cac1f54222dc58a2aed7139"
+    },
+    {
+      "path": "app.json",
+      "language": "json",
+      "hash": "56947c6d24795c136c1d689f01f0758463626efd918e17e442199af5f043773d"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "hash": "ed4f09267c916708102c96b07479ae8cdbfca56787316294b2570c2064dcb87f"
+    },
+    {
+      "path": "magically.json",
+      "language": "json",
+      "hash": "321308a5f9bac59869d40e4c11282a683080e335ef85771419ca0d85ff1bb520"
+    },
+    {
+      "path": "TODO.md",
+      "language": "markdown",
+      "hash": "5f9c59ea37e1ef460aad9272cf9a0f0a13936ad893fbf5729ede623034d3d63b"
+    },
+    {
+      "path": "components/showcase/Reference.tsx",
+      "language": "typescript",
+      "hash": "d4f9341c13afc8b95e43c4ee494c5a7b4060101f69f89a6800d965c96b7d360e"
+    },
+    {
+      "path": "magically/entities/index.ts",
+      "language": "typescript",
+      "hash": "673a357ca34160ec7592d971442e875356fc4accd3b0eac4aa7679a5eedd739f"
+    },
+    {
+      "path": "StackPDF/stores/pdfStore.ts",
+      "language": "typescript",
+      "hash": "e50a810d948596920fc4cbc22eef7306c6e188d9e1d3165ae59422755288ff0e"
+    },
+    {
+      "path": "services/pdfService.ts",
+      "language": "typescript",
+      "hash": "4a4c7091cf31514bfcb601c278c9d30d53449406755c8f89ebf3dda197cc41a5"
+    },
+    {
+      "path": "magically/functions/generate-pdf/index.ts",
+      "language": "typescript",
+      "hash": "00f3207aaf738aeb7fbd6f1916f63ca417a38ed81e30106e5d1bc5fa8e021f72"
+    },
+    {
+      "path": "magically/functions/generate-pdf/wrangler.toml",
+      "language": "text",
+      "hash": "33bd8ed5138d21f2fc2c0b43d931bd30f890ca025bf11dd1bd463902f060eb8b"
+    },
+    {
+      "path": "screens/PhotoSelectionScreen.tsx",
+      "language": "typescript",
+      "hash": "244805531c98c255e3fbcc2c6f51bfaf775ed8a8381bfd5f52ca182d03e77128"
+    },
+    {
+      "path": "screens/ReorderScreen.tsx",
+      "language": "typescript",
+      "hash": "3240b57fd93c445e696510fe2816c63b460d97e985f4ec8e3551c17e552f106b"
+    },
+    {
+      "path": "screens/PreviewScreen.tsx",
+      "language": "typescript",
+      "hash": "f46ea9e94ce300e5f5901c4db6855cdbadcb96c3cb480f9c8a1f53ac352fdc79"
+    },
+    {
+      "path": "stores/pdfStore.ts",
+      "language": "typescript",
+      "hash": "a4078584cf06a15f28c7959726f83dd9baa55123d046f2937cc550991590cc90"
+    },
+    {
+      "path": "PROJECT_RULES.md",
+      "language": "markdown",
+      "hash": "cebe6aeb5ff7f5e795413663f90fbce8c8b504f058de2efd556ef4d5767aee7a"
+    },
+    {
+      "path": "TASKS.md",
+      "language": "markdown",
+      "hash": "81de6db63b5a698b809719f1fa8e24c5aa3c5fe9e03d8784921e20356199f383"
+    },
+    {
+      "path": "PROJECT.md",
+      "language": "markdown",
+      "hash": "b04555ac4a9a7a92e92c1a1581d92be05b0f42704185aff9e0dfab9c0932e200"
+    }
+  ]
+}
