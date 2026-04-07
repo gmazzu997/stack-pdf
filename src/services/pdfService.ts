@@ -135,24 +135,84 @@ class PDFService {
       );
 
       try {
-        // Fetch image as array buffer
-        const response = await fetch(image.uri);
-        const arrayBuffer = await response.arrayBuffer();
+        // Fetch image as array buffer with mobile Chrome compatibility
+        let arrayBuffer;
+        
+        try {
+          // Try fetch with CORS headers
+          const response = await fetch(image.uri, {
+            mode: 'cors',
+            credentials: 'omit',
+            headers: {
+              'Accept': 'image/*,*/*;q=0.8'
+            }
+          });
+          
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+          }
+          
+          arrayBuffer = await response.arrayBuffer();
+        } catch (fetchError) {
+          console.log('Fetch failed, trying alternative approach:', fetchError);
+          
+          // Alternative approach for blob URLs on mobile
+          if (image.uri.startsWith('blob:')) {
+            // Create a new Image element to load the blob
+            const tempImg = new Image();
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            if (!ctx) {
+              throw new Error('Canvas context not available');
+            }
+            
+            await new Promise((resolve, reject) => {
+              tempImg.onload = resolve;
+              tempImg.onerror = reject;
+              tempImg.src = image.uri;
+            });
+            
+            canvas.width = tempImg.width;
+            canvas.height = tempImg.height;
+            ctx.drawImage(tempImg, 0, 0);
+            
+            // Convert canvas to blob and then to array buffer
+            const blob = await new Promise<Blob>((resolve, reject) => {
+              canvas.toBlob((blob) => {
+                if (blob) {
+                  resolve(blob);
+                } else {
+                  reject(new Error('Canvas toBlob failed'));
+                }
+              }, 'image/jpeg', 0.95);
+            });
+            
+            arrayBuffer = await blob.arrayBuffer();
+          } else {
+            throw fetchError;
+          }
+        }
+        
         const bytes = new Uint8Array(arrayBuffer);
         
-        // Get image dimensions
+        // Get image dimensions with mobile compatibility
         const img = new Image();
+        img.crossOrigin = 'anonymous';
+        
         await new Promise((resolve, reject) => {
-          const timeout = setTimeout(() => reject(new Error('Image load timeout')), 10000);
+          const timeout = setTimeout(() => reject(new Error('Image load timeout')), 15000); // Increased timeout for mobile
           
           img.onload = () => {
             clearTimeout(timeout);
             resolve(null);
           };
-          img.onerror = () => {
+          img.onerror = (error) => {
             clearTimeout(timeout);
+            console.error('Image load error:', error);
             reject(new Error(`Failed to load image: ${image.name}`));
           };
+          
           img.src = image.uri;
         });
         
@@ -162,6 +222,7 @@ class PDFService {
           height: img.height || 600
         });
       } catch (error: any) {
+        console.error('Image processing error:', error);
         throw new Error(`Failed to process image ${image.name}: ${error.message}`);
       }
     }
